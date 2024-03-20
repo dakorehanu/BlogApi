@@ -20,6 +20,7 @@ import com.Phoenix.blogApis.Payloads.ApiResponse;
 import com.Phoenix.blogApis.Payloads.UserDTO;
 import com.Phoenix.blogApis.Service.Impl.UserServiceImpl;
 
+
 @RestController
 @RequestMapping("/api")
 public class UserController {
@@ -121,6 +122,18 @@ public class UserController {
 		
 	}
 	
+	/**
+	 * @author Raviraj Patil
+	 * @apiNote  Pathch User
+	 * @implNote
+	 */
+	@GetMapping("/message")
+	public ResponseEntity<String> getMessage()
+{
+		String s="Hanuman";
+	return new ResponseEntity<String>(s,HttpStatus.FOUND);
+		
+	}
 	
 	
 }
