@@ -224,6 +224,19 @@ public class PostController {
 		logger.info("Completed the request for download PostImage Data with {}:",imageName);
 	}
 	
+	/**
+	 * @author shubham pawar
+	 * @apiNote  Pathch User
+	 * @implNote
+	 */
+	@GetMapping("/message")
+	public ResponseEntity<String> getMessage()
+{
+		String s="Hanuman";
+	return new ResponseEntity<String>(s,HttpStatus.FOUND);
+		
+	}
+	
 	
 	
 }
